@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Unbounded:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-unbounded: 'Unbounded', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #06040d;
+  color: #ffffff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.font-unbounded {
+  font-family: 'Unbounded', sans-serif;
+}
+
+/* Custom glow utilities */
+.glow-purple {
+  box-shadow: 0 0 25px -3px rgba(139, 92, 246, 0.45), 0 0 10px -2px rgba(168, 85, 247, 0.3);
+}
+
+.glow-purple-lg {
+  box-shadow: 0 0 35px 2px rgba(147, 51, 234, 0.5), 0 0 15px 0 rgba(217, 70, 239, 0.35);
+}
+
+.glow-btn {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.glow-card {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Gradient text */
+.text-gradient-purple-pink {
+  background: linear-gradient(135deg, #a78bfa 0%, #c084fc 40%, #f472b6 80%, #fb7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(14, 11, 28, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(18, 14, 38, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
